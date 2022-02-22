@@ -3,5 +3,10 @@
 -------------
 
 #### 1. Spring-tutorial
-> 
+- Testcase 작성시
+```
+//given 어떤 데이터를 기반으로 하느냐
+//when 검증하는 부분
+//then 결과 
+```
 
