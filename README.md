@@ -31,4 +31,26 @@
 - 정형화된 컨트롤러, 서비스, 리포지토리 같은 코드는 컴포넌트 스캔을 사용한다.     
 - 그러나 정형화 되지 않거나, 상황에 따라 구현 클래스를 변경해야 하면 설정을 통해 스프링 빈으로 등록한다. 
 
+#### 3. 회원 등록 및 조회 컨트롤러 (MVC)     
+> 컨트롤러는 정적파읿보다 우선순위가 높기에 먼저 실행 
 
+- 등록 ( Form 객체를 통해 데이터 전달 ) 
+```
+@PostMapping(value = "/members/new")
+public String create(MemberForm form) {
+    Member member = new Member();
+    member.setName(form.getName());
+    memberService.join(member);
+    return "redirect:/";
+}
+```
+
+- 조회 ( model 을 통해 view에 값 넘겨주기 ) 
+```
+@GetMapping(value = "/members")
+public String list(Model model) {
+    List<Member> members = memberService.findMembers();
+    model.addAttribute("members", members);
+    return "members/memberList";
+}
+```
