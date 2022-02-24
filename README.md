@@ -79,8 +79,6 @@ public String list(Model model) {
 - 스프링 부트에 JPA 설정 추가
 - **JPA를 통한 모든 데이터 변경은 트랜잭션 안에서 실행해야 한다.**
 
-<br/>
-<br/>
 
 #### ⭐️ 4. 스프링 데이터 JPA
 
