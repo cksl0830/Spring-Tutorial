@@ -1,5 +1,6 @@
 package chan.chanspring;
 
+import chan.chanspring.aop.TimeTraceAop;
 import chan.chanspring.repository.MemberRepository;
 import chan.chanspring.service.MemberService;
 import org.springframework.context.annotation.Bean;
@@ -20,6 +21,10 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+    @Bean
+    public TimeTraceAop timeTraceAop(){
+        return new TimeTraceAop();
+    }
 //    @Bean
 //    public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
