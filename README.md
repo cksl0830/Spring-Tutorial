@@ -93,7 +93,8 @@ public String list(Model model) {
 
 #### 5. AOP 
 **공통 관심사항과 핵심 관심사항을 분리**
-> 원하는 곳에 공통 관심사항 적용 
+- 원하는 곳에 공통 관심사항 적용 
+- 프록시를 거쳐 실제로 이동 
 
 ![image](https://user-images.githubusercontent.com/60590737/155695986-38e0ac8c-ebdc-413f-9df9-63c4dd8eb0b7.png)
         
