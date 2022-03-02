@@ -1,7 +1,6 @@
-        
-# 인프런 김영한 선생님 강의를 들으며 공부한 내용 정리 
 
-## < 스프링 기초 개념 >        
+## < 스프링 기초 개념 >    
+
 ![image](https://user-images.githubusercontent.com/60590737/155117646-75dd041b-94f0-4f9d-a92d-48de7fe8fd9b.png)
       
 - ## API : @ResponseBody 
