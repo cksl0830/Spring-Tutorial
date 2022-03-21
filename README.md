@@ -33,7 +33,7 @@
 #### 3. 회원 등록 및 조회 컨트롤러 (MVC)     
 > 컨트롤러는 정적파읿보다 우선순위가 높기에 먼저 실행 
 
-- 등록 ( Form 객체를 통해 데이터 전달 ) 
+- 등록( Form 객체를 통해 데이터 전달 ) 
 ```
 @PostMapping(value = "/members/new")
 public String create(MemberForm form) {
